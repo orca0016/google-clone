@@ -6,7 +6,7 @@ export default function SearchHeaderOptions() {
   const pathName = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams()
-  const   searchTerm  = searchParams.get("search")
+  const   searchTerm  = searchParams.get("searchTerm")
   const selectTab = (tab) => {
     router.push(`/search/${tab === "Images" ? "image" : "web"}?searchTerm=${searchTerm}`);
   };
