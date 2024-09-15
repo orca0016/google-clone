@@ -24,7 +24,7 @@ export default function WebSearchResults({ results }) {
               {result.title}
             </Link>
           </div>
-          <p className="text-gray-600">{Parser(result.htmlSnippet)}</p>
+          <p className="text-gray-600">{Parser(result.htmlSnippet || '')}</p>
         </div>
       ))}
       <PaginationButtons />
