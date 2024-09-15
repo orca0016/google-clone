@@ -3,10 +3,10 @@ import Link from "next/link";
 import React from "react";
 import PaginationButtons from "../../PaginationButtons";
 export default function WebSearchResults({ results }) {
-  console.log(results);
 
+  
   return (
-    <div className="w-full mx-auto  px-3 pb-40 sm:pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
+    <div className="w-full mx-auto  px-3 pb-40 sm:pb-40 sm:pl-[5%] md:pl-[14%] lg:pl-52">
       <p>
         About {results.searchInformation?.formattedTotalResults} results (
         {results.searchInformation?.formattedSearchTime} seconds)
